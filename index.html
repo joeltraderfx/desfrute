@@ -1,161 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>DESFRUTE — Mentoria Presencial | 12 anos em 3 dias</title>
-<meta name="description" content="O que eu aprendi em 12 anos vou ensinar em 3 dias. Mentoria presencial DESFRUTE. Assista ao vídeo e marque a sua entrevista.">
-<meta name="theme-color" content="#000000">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DESFRUTE — Mentoria Presencial">
-<meta property="og:description" content="3 dias para aprender o que eu levei 12 anos para descobrir.">
-<meta property="og:image" content="https://img.youtube.com/vi/t4Cfc3jK3n4/maxresdefault.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<title>Black Friday 2026 · Oferta Exclusiva</title>
+<meta name="description" content="Assista ao vídeo e garanta sua condição especial de Black Friday.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{ --wa-1:#25d366; --wa-2:#12a150; color-scheme:dark; }
-*{box-sizing:border-box;margin:0}
-html,body{background:#000}
-body{
-  min-height:100svh;color:#fff;
-  font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
-  padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));
-}
-/* Vídeo vertical (9:16): a largura se ajusta para o botão caber na tela sem rolar */
-.vsl{
-  position:relative;width:min(100%, calc((100svh - 140px) * 9 / 16), 520px);
-  aspect-ratio:9/16;background:#000;border-radius:18px;overflow:hidden;
-}
-.vsl #player,.vsl iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.unmute{
-  position:absolute;inset:0;z-index:2;width:100%;border:0;cursor:pointer;
-  background:linear-gradient(to top,rgba(0,0,0,.45),transparent 40%);
-}
-.unmute span{
-  position:absolute;left:50%;bottom:16%;transform:translateX(-50%);white-space:nowrap;
-  display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;
-  background:#fff;color:#000;font:800 .92rem/1 system-ui,sans-serif;
-}
-.unmute svg{width:18px;height:18px;fill:currentColor}
-.cta{
-  display:flex;align-items:center;justify-content:center;gap:12px;
-  width:min(100%, calc((100svh - 140px) * 9 / 16), 520px);min-height:60px;padding:14px 18px;
-  border-radius:16px;border:0;text-decoration:none;
-  font:800 1.05rem/1.2 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;text-align:center;
-  background:#16130f;color:#7a705e;cursor:not-allowed;
-}
-.cta svg{width:28px;height:28px;flex:none;fill:currentColor}
-.cta[aria-disabled="false"]{
-  background:linear-gradient(180deg,var(--wa-1),var(--wa-2));color:#fff;cursor:pointer;
-  box-shadow:0 8px 28px rgba(37,211,102,.35);animation:pulse 2s ease-in-out infinite;
-}
-.cta:focus-visible,.unmute:focus-visible{outline:3px solid #fff;outline-offset:3px}
-@keyframes pulse{0%,100%{box-shadow:0 8px 28px rgba(37,211,102,.35),0 0 0 0 rgba(37,211,102,.5)}60%{box-shadow:0 8px 28px rgba(37,211,102,.35),0 0 0 14px rgba(37,211,102,0)}}
-@media (prefers-reduced-motion:reduce){.cta[aria-disabled="false"]{animation:none}}
+:root{--bg:#0a0a0a;--card:#141414;--line:#2a2418;--gold:#d4af37;--gold2:#f1d77a;--txt:#f4f1ea;--mut:#a8a293}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(ellipse at top,#1d1708 0,var(--bg) 55%) fixed;color:var(--txt);font-family:Inter,system-ui,sans-serif;line-height:1.6;padding-bottom:84px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.top{background:linear-gradient(90deg,#8a6d12,var(--gold),#8a6d12);color:#111;text-align:center;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:10px}
+.hero{text-align:center;padding:48px 0 12px}
+.tag{display:inline-block;border:1px solid var(--gold);color:var(--gold2);border-radius:99px;padding:6px 16px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:22px}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(30px,6vw,52px);line-height:1.12;margin-bottom:16px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);font-size:clamp(16px,2.4vw,19px);max-width:620px;margin:0 auto 30px}
+.video{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--gold);box-shadow:0 0 0 6px rgba(212,175,55,.08),0 30px 70px rgba(0,0,0,.6);background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#111;font-weight:700;font-size:18px;text-decoration:none;padding:18px 34px;border-radius:12px;box-shadow:0 10px 30px rgba(212,175,55,.3);transition:transform .2s;animation:pulse 2.4s infinite}
+.btn:hover{transform:translateY(-2px)}
+@keyframes pulse{0%,100%{box-shadow:0 10px 30px rgba(212,175,55,.3)}50%{box-shadow:0 10px 44px rgba(212,175,55,.6)}}
+.cta{text-align:center;padding:34px 0 10px}
+.cta small{display:block;color:var(--mut);margin-top:12px;font-size:13px}
+.count{display:flex;justify-content:center;gap:12px;margin:46px 0 8px}
+.count div{background:var(--card);border:1px solid var(--line);border-radius:12px;min-width:76px;padding:12px 8px;text-align:center}
+.count b{display:block;font-family:'Playfair Display',serif;font-size:32px;color:var(--gold2)}
+.count span{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--mut)}
+.lbl{text-align:center;color:var(--mut);font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:50px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+.card i{font-style:normal;font-family:'Playfair Display',serif;color:var(--gold);font-size:28px}
+.card h3{margin:8px 0 6px;font-size:17px}
+.card p{color:var(--mut);font-size:15px}
+.final{text-align:center;background:linear-gradient(180deg,#1a1405,var(--card));border:1px solid var(--gold);border-radius:18px;padding:40px 22px;margin-bottom:40px}
+.final h2{font-family:'Playfair Display',serif;font-size:clamp(24px,4.5vw,34px);margin-bottom:10px}
+.final p{color:var(--mut);margin-bottom:24px}
+footer{text-align:center;color:#6f6a5d;font-size:12px;padding:10px 0 30px}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:rgba(10,10,10,.94);border-top:1px solid var(--line);backdrop-filter:blur(8px);z-index:9;display:none}
+.sticky .btn{width:100%;font-size:16px;padding:15px;animation:none}
+@media(max-width:700px){.sticky{display:block}}
 </style>
 </head>
 <body>
-  <div class="vsl">
-    <div id="player"></div>
-    <button type="button" class="unmute" id="unmute" hidden>
-      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.5-4.03v8.05A4.5 4.5 0 0 0 16.5 12ZM14 3.23v2.06a7 7 0 0 1 0 13.42v2.06a9 9 0 0 0 0-17.54Z"/></svg>Toque para ouvir com som</span>
-    </button>
+
+<div class="top">Black Friday 2026 · Condição exclusiva por tempo limitado</div>
+
+<main class="wrap">
+  <section class="hero">
+    <span class="tag">Assista antes que saia do ar</span>
+    <h1>Sua oportunidade de <em>Black Friday</em> começa neste vídeo</h1>
+    <p class="sub">Veja o vídeo completo e descubra como garantir a condição especial desta edição. Vagas e prazo limitados.</p>
+    <div class="video">
+      <iframe id="vsl" title="Vídeo" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a class="btn" data-wa href="#" target="_blank" rel="noopener">Quero entrar no grupo VIP do WhatsApp</a>
+    <small>Acesso gratuito ao grupo · Sem spam</small>
+  </section>
+
+  <p class="lbl" style="margin-top:46px">A oferta termina em</p>
+  <div class="count" id="count">
+    <div><b id="d">00</b><span>dias</span></div>
+    <div><b id="h">00</b><span>horas</span></div>
+    <div><b id="m">00</b><span>min</span></div>
+    <div><b id="s">00</b><span>seg</span></div>
   </div>
 
-  <a class="cta" id="cta" aria-disabled="true" role="link" tabindex="-1"
-     href="https://chat.whatsapp.com/L0qYY0jfrl8IMgNhTsUPQX" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 24 24" aria-hidden="true" id="ctaIcon"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5Zm3 8H9V7a3 3 0 0 1 6 0v3Z"/></svg>
-    <span id="ctaText">Disponível em 08:00</span>
-  </a>
+  <section class="grid">
+    <div class="card"><i>01</i><h3>Condição única</h3><p>Valores e bônus disponíveis somente durante a Black Friday.</p></div>
+    <div class="card"><i>02</i><h3>Grupo VIP</h3><p>Receba a oferta e os avisos em primeira mão direto no WhatsApp.</p></div>
+    <div class="card"><i>03</i><h3>Vagas limitadas</h3><p>Quando o prazo acabar, a oferta é encerrada sem prorrogação.</p></div>
+  </section>
+
+  <section class="final">
+    <h2>Não deixe para depois</h2>
+    <p>Entre agora no grupo para receber a condição de Black Friday antes de todo mundo.</p>
+    <a class="btn" data-wa href="#" target="_blank" rel="noopener">Entrar no grupo agora</a>
+  </section>
+</main>
+
+<footer>© 2026 · Todos os direitos reservados</footer>
+
+<div class="sticky"><a class="btn" data-wa href="#" target="_blank" rel="noopener">Entrar no grupo VIP</a></div>
 
 <script>
-(function(){
-  var VIDEO_ID = 't4Cfc3jK3n4';
-  var LIMIT = 8 * 60;            // segundos de vídeo assistido para liberar o botão
-  var KEY = 'desfrute_watched';
-  var watched = 0, timer = null, unlocked = false;
+/* ====== EDITE SÓ ESTA PARTE ====== */
+const YT_ID   = "t4Cfc3jK3n4";
+const WA_LINK = "https://chat.whatsapp.com/EJU3wpssa0Q0hbxRmjfPCB";
+const FIM     = "2026-11-27T23:59:59-03:00";   // fim da oferta (horário de Brasília)
+/* ================================= */
 
-  try { watched = parseInt(localStorage.getItem(KEY), 10) || 0; } catch(e){}
+document.getElementById("vsl").src =
+  "https://www.youtube-nocookie.com/embed/" + YT_ID + "?rel=0&modestbranding=1&playsinline=1";
 
-  var $cta = document.getElementById('cta'),
-      $txt = document.getElementById('ctaText'),
-      $icon = document.getElementById('ctaIcon');
+document.querySelectorAll("[data-wa]").forEach(a => a.href = WA_LINK);
 
-  var WA_PATH = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z';
-
-  function fmt(s){ var m = Math.floor(s/60), r = s % 60; return (m<10?'0':'')+m+':'+(r<10?'0':'')+r; }
-
-  function render(){
-    if (unlocked) return;
-    var left = Math.max(0, LIMIT - watched);
-    $txt.textContent = 'Disponível em ' + fmt(left);
-    if (left === 0) unlock();
-  }
-
-  function unlock(){
-    if (unlocked) return;
-    unlocked = true;
-    $cta.setAttribute('aria-disabled','false');
-    $cta.removeAttribute('role');
-    $cta.tabIndex = 0;
-    $icon.innerHTML = '<path d="'+WA_PATH+'"/>';
-    $txt.textContent = 'Clique aqui e marque a entrevista';
-    stop();
-  }
-
-  // Enquanto bloqueado, o clique não faz nada
-  $cta.addEventListener('click', function(e){
-    if ($cta.getAttribute('aria-disabled') === 'true') e.preventDefault();
-  });
-
-  function tick(){
-    watched++;
-    try { localStorage.setItem(KEY, watched); } catch(e){}
-    render();
-  }
-  function start(){ if (!timer && !unlocked) timer = setInterval(tick, 1000); }
-  function stop(){ if (timer){ clearInterval(timer); timer = null; } }
-
-  render();
-
-  // YouTube IFrame API: conta só o tempo em que o vídeo está tocando
-  window.onYouTubeIframeAPIReady = function(){
-    new YT.Player('player', {
-      videoId: VIDEO_ID,
-      // Navegadores só permitem iniciar sozinho se o vídeo começar sem som
-      playerVars: { autoplay:1, mute:1, rel:0, modestbranding:1, playsinline:1, iv_load_policy:3 },
-      events: {
-        onReady: function(e){
-          e.target.mute();
-          e.target.playVideo();
-          var b = document.getElementById('unmute');
-          b.hidden = false;
-          b.addEventListener('click', function(){
-            e.target.seekTo(0, true);   // recomeça para a pessoa ouvir desde o início
-            e.target.unMute();
-            e.target.setVolume(100);
-            e.target.playVideo();
-            b.hidden = true;
-          });
-        },
-        onStateChange: function(e){
-          if (e.data === YT.PlayerState.PLAYING) start();
-          else stop();
-          if (e.data === YT.PlayerState.ENDED) unlock();   // vídeo mais curto que o tempo mínimo
-        }
-      }
-    });
-  };
-
-  var s = document.createElement('script');
-  s.src = 'https://www.youtube.com/iframe_api';
-  s.onerror = function(){
-    document.getElementById('player').outerHTML =
-      '<iframe src="https://www.youtube.com/embed/'+VIDEO_ID+'?autoplay=1&mute=1&rel=0&playsinline=1" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Vídeo DESFRUTE"></iframe>';
-    start();
-  };
-  document.head.appendChild(s);
-})();
+const pad = n => String(n).padStart(2, "0");
+function tick(){
+  let t = Math.max(0, new Date(FIM) - new Date());
+  const d = Math.floor(t / 864e5); t %= 864e5;
+  const h = Math.floor(t / 36e5);  t %= 36e5;
+  const m = Math.floor(t / 6e4);   t %= 6e4;
+  const s = Math.floor(t / 1e3);
+  document.getElementById("d").textContent = pad(d);
+  document.getElementById("h").textContent = pad(h);
+  document.getElementById("m").textContent = pad(m);
+  document.getElementById("s").textContent = pad(s);
+}
+tick(); setInterval(tick, 1000);
 </script>
 </body>
 </html>
