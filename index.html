@@ -95,6 +95,26 @@ footer{border-top:1px solid #1c1a15;padding:44px 0 36px;text-align:center}
 .risk{color:#7a7465;font-size:12px;max-width:720px;margin:14px auto 0;line-height:1.65}
 .sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:rgba(10,9,7,.94);border-top:1px solid var(--line);backdrop-filter:blur(8px);z-index:9;display:none}
 .sticky .btn{width:100%;padding:15px;font-size:16px}
+
+.quiz-cta{margin-top:26px;padding-top:26px;border-top:1px solid var(--line);max-width:520px;margin-left:auto;margin-right:auto}
+.quiz-cta p{color:var(--mut);font-size:15px;margin-bottom:14px}
+dialog#qz{border:1px solid #6b5a26;border-radius:18px;background:var(--bg);color:var(--txt);width:min(560px,calc(100% - 28px));max-height:calc(100% - 28px);padding:0;margin:auto;overflow:auto}
+dialog#qz::backdrop{background:rgba(0,0,0,.82)}
+.qb{padding:28px 24px 26px}
+.qx{position:absolute;top:10px;right:14px;background:none;border:0;color:var(--mut);font-size:26px;cursor:pointer;line-height:1}
+.qbar{height:3px;background:var(--line);border-radius:3px;margin:14px 0 22px;overflow:hidden}
+.qbar i{display:block;height:100%;width:0;background:var(--gold);transition:width .3s}
+.qn{color:var(--gold);font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.qq{font-family:var(--serif);font-size:23px;line-height:1.25;margin:0 0 18px}
+.qo{display:block;width:100%;text-align:left;background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:12px;padding:15px 18px;margin-top:10px;font:500 15.5px/1.4 Inter,system-ui,sans-serif;cursor:pointer;transition:border-color .15s,background .15s}
+.qo:hover,.qo:focus-visible{border-color:var(--gold);background:#1a160d;outline:0}
+.qback{background:none;border:0;color:var(--mut);font:13px Inter,sans-serif;margin-top:16px;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+.qr{text-align:center}
+.qr h3{font-size:27px;margin:8px 0 12px}
+.qr p{color:#cfc9ba;font-size:15.5px;margin-bottom:12px}
+.qr .prod{display:inline-block;border:1px solid #6b5a26;border-radius:99px;color:var(--gold2);font-size:13px;font-weight:600;padding:6px 16px;margin:4px 0 14px}
+.qr .btn{width:100%;margin-top:6px}
+.qr small{display:block;color:#7a7465;font-size:11.5px;margin-top:16px;line-height:1.55}
 @media(max-width:820px){.sp{grid-template-columns:1fr;gap:28px}.ph{max-width:400px;margin:0 auto}.pg,.safe,.fit{grid-template-columns:1fr}.sticky{display:block}}
 </style>
 </head>
@@ -108,8 +128,8 @@ footer{border-top:1px solid #1c1a15;padding:44px 0 36px;text-align:center}
   <span class="eyebrow">Com Joel Trader · EducaTrader FX</span>
   <h1>Mentoria <span class="gold">Analista de Mercado Sênior</span></h1>
   <p class="lead">O que levou <b>12 anos</b> para ser aprendido, organizado em um método. Aprenda a ler as <b>regiões institucionais</b> do gráfico com critério, contexto e gestão de risco.</p>
-  <a class="btn" data-buy href="#" target="_blank" rel="noopener">Quero entrar na mentoria</a>
-  <span class="sub">Sem promessa de ganhos · Método, não atalho</span>
+  <button class="btn" type="button" data-quiz>Descobrir meu perfil · Fazer o quiz</button>
+  <span class="sub">Leva 1 minuto · Sem promessa de ganhos</span>
   <div class="chips"><span>Regiões institucionais</span><span>Regiões de liquidez</span><span>Regiões de pullback</span></div>
 </section>
 
@@ -118,8 +138,9 @@ footer{border-top:1px solid #1c1a15;padding:44px 0 36px;text-align:center}
   <h2>3 dias para aprender o que levei <span class="gold">12 anos para descobrir</span></h2>
   <div class="video"><iframe id="vsl" title="3 Dias Para Aprender o Que Eu Levei 12 Anos Para Descobrir" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
   <div class="cta">
-    <a class="btn" data-buy href="#" target="_blank" rel="noopener">Quero entrar na mentoria</a>
-    <span class="sub">Checkout seguro · Você revisa tudo antes de confirmar</span>
+    <button class="btn" type="button" data-quiz>Descobrir meu perfil · Fazer o quiz</button>
+    <span class="sub">7 perguntas rápidas · Indicamos o caminho certo para o seu perfil</span>
+
   </div>
 </section>
 
@@ -181,8 +202,8 @@ footer{border-top:1px solid #1c1a15;padding:44px 0 36px;text-align:center}
   <h2>Três passos, <span class="gold">sem complicação</span></h2>
   <div class="pg">
     <div class="pc"><i>PASSO 01</i><h3>Assista ao vídeo</h3><p>Entenda a lógica das regiões institucionais e como o método organiza a sua leitura do gráfico.</p></div>
-    <div class="pc"><i>PASSO 02</i><h3>Entre na mentoria</h3><p>Finalize a compra na página de pagamento segura e comece a aprender com a estrutura completa.</p></div>
-    <div class="pc"><i>PASSO 03</i><h3>Tire suas dúvidas</h3><p>Entre no grupo do WhatsApp e converse diretamente com a equipe.</p></div>
+    <div class="pc"><i>PASSO 02</i><h3>Faça o quiz de perfil</h3><p>Responda 7 perguntas rápidas sobre a sua experiência e o que você busca hoje.</p></div>
+    <div class="pc"><i>PASSO 03</i><h3>Receba sua indicação</h3><p>Você vê o produto mais adequado ao seu perfil e entra no grupo do WhatsApp para tirar dúvidas com a equipe.</p></div>
   </div>
 </section>
 
@@ -211,9 +232,8 @@ footer{border-top:1px solid #1c1a15;padding:44px 0 36px;text-align:center}
 <section class="final">
   <span class="eyebrow">Próximo passo</span>
   <h2>Leia o gráfico como quem <span class="gold">entende o fluxo</span></h2>
-  <p class="lead">Entre na mentoria e aprenda, em muito menos tempo, o que levou mais de uma década para ser construído.</p>
-  <a class="btn" data-buy href="#" target="_blank" rel="noopener">Quero entrar na mentoria</a>
-  <div style="margin-top:16px"><a class="btn ghost" data-wa href="#" target="_blank" rel="noopener">Tirar dúvidas no grupo do WhatsApp</a></div>
+  <p class="lead">Descubra o caminho certo para o seu momento e aprenda, em muito menos tempo, o que levou mais de uma década para ser construído.</p>
+  <button class="btn" type="button" data-quiz>Descobrir meu perfil · Fazer o quiz</button>
 </section>
 
 </main>
@@ -223,18 +243,17 @@ footer{border-top:1px solid #1c1a15;padding:44px 0 36px;text-align:center}
   <div class="soc">
     <a href="https://www.youtube.com/@JoelAlves-educatraderfx" target="_blank" rel="noopener">YouTube</a>
     <a href="https://www.instagram.com/educatrader.fx/" target="_blank" rel="noopener">Instagram</a>
-    <a data-wa href="#" target="_blank" rel="noopener">Grupo do WhatsApp</a>
   </div>
   <p class="co" id="co"></p>
   <p class="risk">Operar no mercado financeiro envolve riscos e pode resultar em perdas, inclusive do capital investido. Esta mentoria tem caráter educacional e não constitui recomendação de investimento. Resultados passados não garantem resultados futuros.</p>
 </footer>
 
-<div class="sticky"><a class="btn" data-buy href="#" target="_blank" rel="noopener">Quero entrar na mentoria</a></div>
+<dialog id="qz" aria-label="Quiz de perfil"><div class="qb" id="qb"></div><button class="qx" type="button" id="qzClose" aria-label="Fechar">×</button></dialog>
+<div class="sticky"><button class="btn" type="button" data-quiz>Descobrir meu perfil · Fazer o quiz</button></div>
 
 <script>
 /* ====== EDITE SÓ ESTA PARTE ====== */
 const YT_ID    = "7rgMpRd-4wM";
-const BUY_LINK = "https://payfast.greenn.com.br/y93kfcn";
 const WA_LINK  = "https://chat.whatsapp.com/EJU3wpssa0Q0hbxRmjfPCB";
 /* Dados reais da empresa (aparecem no rodapé se preenchidos) */
 const EMPRESA  = { razao:"", cnpj:"", email:"" };
@@ -242,7 +261,6 @@ const EMPRESA  = { razao:"", cnpj:"", email:"" };
 const DEPOIMENTOS = [];
 /* ================================= */
 document.getElementById("vsl").src="https://www.youtube-nocookie.com/embed/"+YT_ID+"?rel=0&modestbranding=1&playsinline=1";
-document.querySelectorAll("[data-buy]").forEach(a=>a.href=BUY_LINK);
 document.querySelectorAll("[data-wa]").forEach(a=>a.href=WA_LINK);
 const co=[EMPRESA.razao,EMPRESA.cnpj&&"CNPJ "+EMPRESA.cnpj,EMPRESA.email].filter(Boolean).join(" · ");
 document.getElementById("co").textContent=co||"EducaTrader FX";
@@ -251,6 +269,57 @@ if(DEPOIMENTOS.length){
   DEPOIMENTOS.forEach(d=>{const b=document.createElement("blockquote");b.textContent=d.texto;const c=document.createElement("cite");c.textContent=d.nome;b.appendChild(c);tg.appendChild(b)});
   tg.style.display="grid";document.getElementById("depoimentos").style.display="block";
 }
+
+/* ====== QUIZ ====== */
+const LINKS = {
+  A:{nome:"Analista de Mercado", url:"https://payfast.greenn.com.br/c5r7vnk"},
+  B:{nome:"Mentoria Analista de Mercado Sênior", url:"https://payfast.greenn.com.br/y93kfcn"},
+  C:{nome:"Alerta de Sinal", url:"https://payfast.greenn.com.br/2khngm7"}
+};
+const PERFIS = {
+  A:{t:"Você está construindo a sua base",d:"Pelas suas respostas, o mais importante agora é uma estrutura sólida para ler o gráfico por conta própria, com critério e gestão de risco, antes de partir para qualquer coisa mais avançada."},
+  B:{t:"Você já viveu o mercado e quer método de verdade",d:"Você já passou por cursos, perdas ou atalhos que não entregaram clareza. O seu momento pede um método avançado e acompanhamento mais próximo, para deixar de operar no escuro."},
+  C:{t:"Você quer apoio prático nas suas decisões",d:"Você tem pouco tempo ou prefere um guia no dia a dia. Os alertas de sinal ajudam a acompanhar o mercado com mais direção. Eles apoiam a sua decisão, mas não substituem a sua análise nem eliminam o risco."}
+};
+/* cada opção: [texto, pontosA, pontosB, pontosC] */
+const PERGUNTAS = [
+ ["Há quanto tempo você opera ou estuda o mercado?",[["Ainda não opero",2,0,0],["Menos de 1 ano",2,0,0],["De 1 a 3 anos",1,1,0],["Mais de 3 anos",0,2,0]]],
+ ["Você já fez algum curso ou mentoria de trading?",[["Nunca fiz",2,0,0],["Fiz 1 ou 2",1,1,0],["Já fiz vários",0,2,0]]],
+ ["Você já perdeu dinheiro operando?",[["Não",1,0,0],["Sim, um valor pequeno",1,1,0],["Sim, um valor que doeu",0,2,0]]],
+ ["Você já deu dinheiro para outra pessoa operar por você (gestor, grupo, copy)?",[["Nunca",0,0,0],["Sim, e deu certo",0,0,1],["Sim, e perdi dinheiro",1,1,0]]],
+ ["Você já comprou indicadores, robôs ou estratégias prontas?",[["Nunca comprei",1,0,0],["Sim, 1 ou 2",0,1,0],["Sim, vários",0,2,0]]],
+ ["O que você mais quer neste momento?",[["Aprender a analisar o gráfico do zero, com estrutura",3.5,0,0],["Um método avançado, com acompanhamento próximo",0,3.5,0],["Receber alertas de sinal para me guiar nas operações",0,0,3.5]]],
+ ["Quanto tempo por dia você consegue dedicar ao mercado?",[["Menos de 30 minutos",0,0,2],["De 30 minutos a 1 hora",1,0,1],["De 1 a 2 horas",1,1,0],["Mais de 2 horas",0,2,0]]]
+];
+(function(){
+  const dlg=document.getElementById("qz"),box=document.getElementById("qb");
+  let i=0,sc=[0,0,0],hist=[];
+  const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+  function pergunta(){
+    box.replaceChildren();
+    const q=PERGUNTAS[i];
+    box.append(el("div","qn","Pergunta "+(i+1)+" de "+PERGUNTAS.length));
+    const bar=el("div","qbar"),f=document.createElement("i");f.style.width=(i/PERGUNTAS.length*100)+"%";bar.append(f);box.append(bar);
+    box.append(el("h3","qq",q[0]));
+    q[1].forEach(o=>{const b=el("button","qo",o[0]);b.type="button";b.onclick=()=>{hist.push(o);sc=sc.map((v,k)=>v+o[k+1]);i++;i<PERGUNTAS.length?pergunta():resultado()};box.append(b)});
+    if(i>0){const b=el("button","qback","Voltar");b.type="button";b.onclick=()=>{const o=hist.pop();sc=sc.map((v,k)=>v-o[k+1]);i--;pergunta()};box.append(b)}
+  }
+  function resultado(){
+    const k=sc.indexOf(Math.max(...sc)),key="ABC"[k],p=PERFIS[key],l=LINKS[key];
+    box.replaceChildren();
+    const r=el("div","qr");
+    r.append(el("div","qn","Seu perfil"),el("h3",null,p.t),el("p",null,p.d),el("span","prod","Indicado para você: "+l.nome));
+    const a=el("a","btn","Quero o "+l.nome);a.href=l.url;a.target="_blank";a.rel="noopener";
+    const w=el("a","btn ghost","Entrar no grupo do WhatsApp");w.href=WA_LINK;w.target="_blank";w.rel="noopener";w.style.marginTop="12px";
+    const re=el("button","qback","Refazer o quiz");re.type="button";re.onclick=abrir;
+    r.append(a,w,re,el("small",null,"Resultado orientativo, baseado apenas nas suas respostas. Conteúdo educacional: operar no mercado financeiro envolve riscos e pode resultar em perdas. Não há garantia de resultados."));
+    box.append(r);
+  }
+  function abrir(){i=0;sc=[0,0,0];hist=[];pergunta();if(!dlg.open)dlg.showModal()}
+  document.querySelectorAll("[data-quiz]").forEach(b=>b.onclick=abrir);
+  document.getElementById("qzClose").onclick=()=>dlg.close();
+  dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+})();
 </script>
 </body>
 </html>
